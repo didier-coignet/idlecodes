@@ -11,9 +11,8 @@ import kotlinx.serialization.json.JsonObject
 class IdleChampions {
     var nextId = 0
     private fun getNextServerId(): String {
-        nextId++
-        nextId = nextId.mod(9)
-        return "ps$nextId"
+       // nextId = nextId.mod(3) +7
+        return "ps7"
     }
 
     fun getIdleInstanceId(httpClient: HttpClient, login: IdleLogin, retry: Boolean = true): String? {

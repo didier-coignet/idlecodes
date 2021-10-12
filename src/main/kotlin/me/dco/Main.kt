@@ -22,8 +22,8 @@ fun main(args: Array<String>) {
                 // this: EndpointConfig
                 maxConnectionsPerRoute = 100
                 pipelineMaxSize = 20
-                keepAliveTime = 50000
-                connectTimeout = 50000
+                keepAliveTime = 500000
+                connectTimeout = 500000
                 connectAttempts = 5
             }
 
